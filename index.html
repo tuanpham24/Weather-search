@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather search</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <div class="weather-wrapper">
+    <h1>Thời tiết 24/7</h1>
+
+    <form action="" id="form-search">
+      <div class="form-group">
+        <input type="text" id="search-input" placeholder="Nhập tên thành phố...">
+        <button type="submit">Tìm kiếm</button>
+      </div>
+    </form>
+
+    <div class="weather-info">
+
+      <!-- City -->
+      <div>
+        <div class="flex">
+          <h3>Thành phố: </h3>
+          <h3 class="city-name"></h3>
+        </div>
+        <h3 class="description"></h3>
+      </div>
+
+      <!-- Temperature -->
+      <h3 class="temperature">0</h3>
+
+      <!-- weather icon -->
+      <img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" alt="">
+
+      <h3 class="wind"></h3>
+    </div>
+  </div>
+
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
